@@ -14,10 +14,10 @@
 
   <!-- 메뉴바 -->
   <nav class="grid grid-cols-4 bg-blue-500 text-white text-center divide-x divide-blue-700">
-    <a href="#" class="py-4 hover:bg-blue-600">메뉴 1</a>
-    <a href="#" class="py-4 hover:bg-blue-600">메뉴 2</a>
-    <a href="#" class="py-4 hover:bg-blue-600">메뉴 3</a>
-    <a href="#" class="py-4 hover:bg-blue-600">메뉴 4</a>
+    <button onclick="goTo('page1.html')" class="py-4 hover:bg-blue-600">메뉴 1</button>
+    <button onclick="goTo('page2.html')" class="py-4 hover:bg-blue-600">메뉴 2</button>
+    <button onclick="goTo('page3.html')" class="py-4 hover:bg-blue-600">메뉴 3</button>
+    <button onclick="goTo('page4.html')" class="py-4 hover:bg-blue-600">메뉴 4</button>
   </nav>
 
   <!-- 콘텐츠 영역 -->
@@ -32,5 +32,12 @@
       <div class="bg-blue-500 text-white text-center py-44 h-full">그림 1</div>
     </div>
   </main>
+
+  <!-- 자바스크립트 함수 -->
+  <script>
+    function goTo(page) {
+      window.location.href = page;
+    }
+  </script>
 </body>
 </html>
